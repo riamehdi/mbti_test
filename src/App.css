@@ -20,6 +20,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+.adfit {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .button_container {
   display: flex;

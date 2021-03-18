@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import IntegratedAdfitComponent from "./IntegratedAdfitComponent";
 
 const Home = () => {
   return (
@@ -12,6 +13,9 @@ const Home = () => {
         <Link to="/question">
           <button className="start_button">mbti test 시작하기</button>
         </Link>
+      </div>
+      <div className="adfit">
+        <IntegratedAdfitComponent />
       </div>
     </div>
   );
