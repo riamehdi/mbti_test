@@ -96,6 +96,24 @@ const Question = () => {
       answer2: "P",
     },
   ];
+  const description = {
+    INTJ: "1",
+    INTP: "2",
+    ENTJ: "3",
+    ENTP: "4",
+    INFJ: "5",
+    INFP: "6",
+    ENFJ: "7",
+    ENFP: "8",
+    ISTJ: "9",
+    ISFJ: "10",
+    ESTJ: "11",
+    ESFJ: "12",
+    ISTP: "13",
+    ISFP: "14",
+    ESTP: "15",
+    ESFP: "16",
+  };
   //여기서부터 막힘 엇박자로 실행 됨
   const onClick = (type) => {
     setMbti({
@@ -110,14 +128,14 @@ const Question = () => {
   };
 
   if (id > 11) {
-    var str = "";
-    mbti["EI"] >= 2 ? (str += "E") : (str += "I");
-    mbti["SN"] >= 2 ? (str += "S") : (str += "N");
-    mbti["TF"] >= 2 ? (str += "T") : (str += "F");
-    mbti["JP"] >= 2 ? (str += "J") : (str += "P");
-    console.log(str);
+    var result = "";
+    mbti["EI"] >= 2 ? (result += "E") : (result += "I");
+    mbti["SN"] >= 2 ? (result += "S") : (result += "N");
+    mbti["TF"] >= 2 ? (result += "T") : (result += "F");
+    mbti["JP"] >= 2 ? (result += "J") : (result += "P");
+    console.log(result);
     console.log(mbti);
-    return <Result question={str} />;
+    return <Result result={result} description={description[result]} />;
   }
   return (
     <div className="question__container">
