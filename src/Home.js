@@ -1,21 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import IntegratedAdfitComponent from "./IntegratedAdfitComponent";
-
+import wc from "./img/wc.png";
 const Home = () => {
   return (
     <div className="home__container">
-      <h3 className="home__title">MBTI test</h3>
-      <div className="home__description">
-        mbti test를 시작하시려면 아래 버튼을 눌러주세요
-      </div>
+      <h3 className="home__title ">스누피 MBTI 테스트</h3>
+      <img className="welcome_snoopy" src={wc} width="150px" />
+
       <div className="button_container">
         <Link to="/question">
-          <button className="start_button">mbti test 시작하기</button>
+          <button className="start_button">테스트 시작하기</button>
         </Link>
-      </div>
-      <div className="adfit">
-        <IntegratedAdfitComponent />
       </div>
     </div>
   );

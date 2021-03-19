@@ -3,7 +3,7 @@ import AdfitWebComponent from "react-adfit-web-component";
 
 class IntegratedAdfitComponent extends React.Component {
   render() {
-    return <AdfitWebComponent adUnit="DAN-8XqZtwEI61txXUuG" />;
+    return <AdfitWebComponent adUnit="DAN-IS36R0eVK5FcjqZ0" />;
   }
 }
 

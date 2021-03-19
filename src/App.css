@@ -4,15 +4,17 @@
 
 body {
   display: flex;
+  flex-direction: column;
   background-color: var(--main-bg-color);
   justify-content: center;
+  background-color: #f68657;
 }
 .wrapper {
   margin: 20px auto;
   background-color: var(--sub-bg-color);
-  border-radius: 5px;
+  border-radius: 25px;
   padding: 30px 20px;
-  width: 700px;
+  width: 400px;
 }
 .container {
   display: flex;
@@ -21,10 +23,11 @@ body {
   align-items: center;
 }
 .adfit {
-  margin-top: 15px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .button_container {
@@ -36,20 +39,17 @@ body {
 button {
   text-align: center;
   margin-top: 15px;
-  border: none;
-  border-radius: 5px;
   transition: background-color 0.5s ease-in-out;
-  width: 600px;
+  width: 300px;
   height: 50px;
-  background-color: var(--blue);
+  border-radius: 30px;
   font-size: 20px;
-}
-button:hover {
-  background-color: #0984e3;
+  border: none;
+  background-color: #f6b352;
+  animation: jaehee 0.3s linear;
 }
 
 :root {
-  --main-bg-color: #f1f2f6;
+  --main-bg-color: #f68657;
   --sub-bg-color: #ffffff;
-  --blue: #81ecec;
 }

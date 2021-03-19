@@ -3,7 +3,7 @@ import "./App.css";
 import { Route } from "react-router-dom";
 import Home from "./Home";
 import Question from "./Question";
-
+import IntegratedAdfitComponent from "./IntegratedAdfitComponent";
 function App() {
   return (
     <body>
@@ -12,6 +12,10 @@ function App() {
           <Route path="/" component={Home} exact={true} />
           <Route path="/question" component={Question} />
         </div>
+      </div>
+      <div className="adfit">
+        <IntegratedAdfitComponent />
+        <IntegratedAdfitComponent />
       </div>
     </body>
   );

@@ -11,8 +11,8 @@ const QuestionDetail = ({
 }) => {
   return (
     <div>
-      <h3 className="home__title">MBTI test</h3>
-      <ProgressBar variant="info" now={(100 / 12) * qNum} />
+      <h3 className="home__title">스누피 MBTI 테스트</h3>
+      <ProgressBar variant="warning" now={(100 / 12) * qNum} />
       <div className="question__number"> {qNum} / 12</div>
       <div className="question__text">{question}</div>
       <div className="button_container">
