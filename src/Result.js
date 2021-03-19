@@ -1,5 +1,6 @@
 import React from "react";
 import AddThis from "./AddThis";
+import loading from "./img/loading.png";
 
 const Result = ({ id }) => {
   const MBTI = {
@@ -108,6 +109,7 @@ const Result = ({ id }) => {
           테스트 다시하기
         </button>
       </div>
+      <div className="splash-screen">결과 분석중...</div>
     </div>
   );
 };
