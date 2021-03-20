@@ -23,11 +23,14 @@ body {
   align-items: center;
 }
 .adfit {
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.adfit div {
+  height: 5px;
 }
 
 .button_container {
@@ -41,13 +44,15 @@ button {
   margin-top: 15px;
   transition: background-color 0.5s ease-in-out;
   width: 300px;
-  height: 50px;
+  height: 60px;
   border-radius: 30px;
   font-size: 20px;
   border: none;
   background-color: #f6b352;
   animation: jaehee 0.3s linear;
   color: var(--font-color);
+  padding: 10px 20px;
+  font-size: 15px;
 }
 
 :root {

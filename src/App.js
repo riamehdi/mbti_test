@@ -15,6 +15,7 @@ function App() {
       </div>
       <div className="adfit">
         <IntegratedAdfitComponent />
+        <div></div>
         <IntegratedAdfitComponent />
       </div>
     </body>
