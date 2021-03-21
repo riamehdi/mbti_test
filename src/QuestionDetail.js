@@ -16,10 +16,10 @@ const QuestionDetail = ({
       <div className="question__number"> {qNum} / 12</div>
       <div className="question__text">{question}</div>
       <div className="button_container">
-        <button className="select_buttonA" onClick={() => onClick(type)}>
+        <button className="select_button" onClick={() => onClick(type)}>
           {answer1}
         </button>
-        <button className="select_buttonB" onClick={next}>
+        <button className="select_button" onClick={next}>
           {answer2}
         </button>
       </div>

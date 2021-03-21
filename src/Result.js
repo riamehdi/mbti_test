@@ -70,7 +70,7 @@ const Result = ({ id }) => {
     ISFJ: {
       text: "Charile Brown(찰리 브라운)",
       description:
-        "온화하여 협조를 잘하는 당신은 찰리 브라운입니다. 상황에 따라 내향적으로 변할 수도 있고, 외향적으로 변할 수도 있기 때문에 나 자신을 잘 몰라요. 착하고 배려가 넘치지만 때로는 우유부단하기도 해요. 부탁 받으면 거의 다 들어주지만, 남에게 부탁하는 것은 어려워하는 소심쟁이.. 나서는 것은 싫어하지만 관심받는 것을 좋아해요! ",
+        "온화하여 협조를 잘하는 당신은 찰리 브라운입니다. 상황에 따라 내향적으로 변할 수도 있고, 외향적으로 변할 수도 있기 때문에 나 자신을 잘 몰라요. 착하고 배려가 넘치지만 때로는 우유부단하기도 해요. 부탁을 받으면 거의 다 들어주지만, 남에게 부탁하는 것은 어려워하는 소심쟁이.. 나서는 것은 싫어하지만 관심받는 것을 좋아해요! ",
       phrase: [
         "넌 아주 사랑스러운 사람이며,",
         <br />,
@@ -134,7 +134,7 @@ const Result = ({ id }) => {
 
       <div className="result__container">
         <h4 className="result__title">{MBTI[id].text}</h4>
-        <img src={photo} width="150px" alt={id} />
+        <img src={photo} width="150px" alt={MBTI[id].text} />
         <p className="result__description">{MBTI[id].description}</p>
         <div className="result__phrase">
           <div>{MBTI[id].phrase}</div>

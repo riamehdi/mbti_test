@@ -4,12 +4,20 @@
   font-weight: 600;
 }
 .question__text {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 20px;
+  height: 80px;
+  text-align: center;
 }
 .question__number {
   margin-top: 20px;
 }
 .question__text {
   margin-bottom: 20px;
+}
+.select_button {
+  height: 80px;
+  border-radius: 50px;
 }
