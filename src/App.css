@@ -22,14 +22,14 @@ body {
   justify-content: center;
   align-items: center;
 }
-.adfit {
+.adfit_box {
   margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.adfit div {
+.adfit_box div {
   height: 5px;
 }
 

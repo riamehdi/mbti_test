@@ -4,13 +4,13 @@ import Script from "react-load-script";
 const AddThis = (props) => {
   useEffect(() => {
     if (window.addthis) {
-      window.addthis.update("share", "url", props.url);
+      window.addthis.update("share", "url", "https://snoopymbti.netlify.app/");
     }
   }, [props.url]);
 
   const handleAddthisLoaded = () => {
     window.addthis.init();
-    window.addthis.update("share", "url", props.url);
+    window.addthis.update("share", "url", "https://snoopymbti.netlify.app/");
   };
 
   return (

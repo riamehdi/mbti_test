@@ -1,5 +1,6 @@
 import React from "react";
 import AddThis from "./AddThis";
+import Spinner from "react-bootstrap/Spinner";
 
 const Result = ({ id }) => {
   const MBTI = {
@@ -150,7 +151,10 @@ const Result = ({ id }) => {
         </button>
         <footer>Created by gotaek</footer>
       </div>
-      <div className="splash-screen">결과 분석중...</div>
+      <div className="splash-screen">
+        <Spinner animation="border" className="mr-3" />
+        결과 분석중...
+      </div>
     </div>
   );
 };

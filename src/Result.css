@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   animation: fadeInUp 0.5s linear;
-  animation-delay: 3s;
+  animation-delay: 4s;
 }
 .result__title {
   text-align: center;
@@ -44,7 +44,7 @@
   padding-top: 150px;
   font-size: 30px;
   animation: hideSplashScreen 0.4s ease-in-out forwards; /*애니메이션이 실행되는 시간 실행 후 유지 */
-  animation-delay: 3s; /*n초 뒤에 애니메이션 실행*/
+  animation-delay: 4s; /*n초 뒤에 애니메이션 실행*/
 }
 footer {
   margin-top: 50px;
