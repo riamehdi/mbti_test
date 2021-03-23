@@ -15,7 +15,4 @@ react에서 img를 상황에 따라 다르게 보여주는 부분에서 헤맸�
 
 스누피 MBTI 테스트:https://snoopymbti.netlify.app/
 
-
-Notion:https://www.notion.so/MBTI-79eae2da8f76448a9227c836558f5966
-
 참고:codelion 
