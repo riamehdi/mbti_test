@@ -14,6 +14,8 @@ react에서 img를 상황에 따라 다르게 보여주는 부분에서 헤맸�
 은근히 오류나 막히는 부분에서 스택오버플로우의 도움을 많이 받았고, 앞으로도 많이 활용해야겠다.
 
 스누피 MBTI 테스트:https://snoopymbti.netlify.app/
+
+
 Notion:https://www.notion.so/MBTI-79eae2da8f76448a9227c836558f5966
 
 참고:codelion 
