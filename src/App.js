@@ -14,11 +14,6 @@ function App() {
           <Route path="/question" component={Question} />
         </div>
       </div>
-      <div className="adfit_box">
-        <Adfit1 />
-        <div></div>
-        <Adfit2 />
-      </div>
     </body>
   );
 }

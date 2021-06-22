@@ -5,133 +5,127 @@ import Spinner from "react-bootstrap/Spinner";
 const Result = ({ id }) => {
   const MBTI = {
     INTJ: {
-      text: "Schroeder(슈레더)",
+      text: "Schroeder",
       description:
-        "넓은 시야를 가지고 비전을 제시하는 당신은 슈레더입니다. 다소 냉랭하고 냉철하여 타인과 친해지는 데 어려움을 겪어요.. 하지만 차가워 보이는 분위기와는 다르게 대화를 나눠보면 개방적이면서 관용적인 사람이에요. 또 가까운 사람에게는 위트와 재치가 넘치는 농담도 건넵니다! 자기 신뢰를 바탕으로 목표를 이루는 것을 잘해요! ",
-      phrase: "서로 사랑한다면, 그 어떤 것도 보듬을테니까",
+        "Vous êtes Shredder qui a un large champ de vision et présente une vision. Il est un peu froid et froid, il a donc du mal à connaître les autres, mais contrairement à son atmosphère froide, c'est une personne ouverte d'esprit et tolérante. Il fait aussi des blagues pleines d'esprit et d'esprit à ses proches ! Vous êtes doué pour atteindre vos objectifs en vous basant sur la confiance en vous ",
+      phrase: "Si on s'aime, on s'occupera de tout",
     },
     INTP: {
-      text: "Marcie(마시)",
+      text: "Marcie",
       description:
-        "뛰어난 전략가인 당신은 마시입니다. 자아 분석하는 것을 즐기며 직접 행동하며 배우는 것보다는 책을 통해 경험을 쌓는 편이에요. 다양하고 정밀하게 분석하기 때문에 결정을 내리는 것을 어려워해요. 친한 친구라도 연락을 잘 하지 않으며, 읽씹 안읽씹을 자유자재로 활용하는 능력자입니다. 조용하고 과묵하지만 관심 분야에 대해서는 말이 많아져요! ",
-      phrase: "포근한 잠자리만큼 힐링은 없지",
+        "Vous êtes Marcy, une brillante stratège. J'aime l'auto-analyse et j'ai tendance à acquérir de l'expérience à travers les livres plutôt qu'à apprendre par la pratique. Il est difficile de prendre une décision car il analyse diversement et précisément. Même les amis proches ne communiquent pas bien et sont capables de les utiliser librement. Calme et réticent, mais bavard sur les centres d'intérêt ! ",
+      phrase: "Il n'y a pas de guérison comme un lit douillet",
     },
     ENTJ: {
-      text: "Lucy Van Pelt(루시 반 펠트)",
+      text: "Lucy Van Pelt",
       description:
-        "당신은 리더쉽이 강한 불도저 루시입니다. 활동적이어서 집에 있는 것을 선호하지 않아요! 나서는 것을 좋아한다기보다는 남들을 잘 못 믿어서 나서는 성격이에요.. 일의 효율성을 중시해서 누군가가 무언가를 못 하고 있으면 답답함을 느껴요! 사람들 앞에서는 카리스마 넘치는 리더지만 혼자 있을 때는 상상력 풍부한 몽상가가 돼요! ",
-      phrase: "날 좋아하든 아니든 상관없어",
+        "Vous êtes Lucy le bulldozer avec un leadership fort. Je suis actif et n'aime pas être à la maison ! Ce n'est pas que j'aime sortir, mais je le fais parce que je ne fais pas confiance aux autres. Un leader charismatique devant les gens, mais un rêveur imaginatif lorsqu'il est seul ! ",
+      phrase: "Je m'en fiche si tu m'aimes ou pas",
     },
     ENTP: {
-      text: "Snoopy(스누피)",
+      text: "Snoopy",
       description:
-        "항상 새로운 것에 도전하는 당신은 스누피입니다. 고민보다 Go! 추진력이 강해 먼저 저지르고 고민은 나중에 하는 스타일이에요. 하지만 뒷심이 부족해요.. 느긋한 모험가 느낌...? 분위기 파악을 잘해 대화를 잘 이끌어나가는 재치 만담꾼! 위기 대처능력 또한 뛰어나 위기 상황이 닥쳤을 때 잘 헤쳐나갈 수 있는 스타일이에요. ",
-      phrase: "비글, 너 인기있다.",
+        "Vous êtes Snoopy qui essaie toujours de nouvelles choses. Allez-y au lieu de vous inquiéter ! Il a une force motrice forte, il s'engage donc d'abord et s'inquiète ensuite. Mais il manque le sens de l'humour. Un sentiment d'aventurier décontracté...? Un comédien plein d'esprit qui mène bien les conversations en saisissant l'ambiance ! Il a une excellente capacité à faire face aux crises et c'est un style qui peut bien traverser les situations de crise. ",
+      phrase: "Beagle, tu es populaire.",
     },
     INFJ: {
-      text: "Linus Van Pelt(라이너스 반 펠트)",
+      text: "Linus Van Pelt",
       description:
-        "당신은 굉장한 로맨티스트 라이너스입니다. 고요한 호수 같은 사람으로 갑작스러운 변화를 싫어해요. 대화를 이끌기보다는 대화의 주도권을 넘겨주는 편이에요. 상상력이 풍부하기 때문에 비유나 은유를 자유자재로 활용 가능! 혼자만의 시간을 중시하며 추상적인 주제에 대해 생각하는 것을 좋아해요.  ",
+        "Tu es un incroyable Linus romantique. Je suis comme un lac calme et je déteste les changements soudains. Plutôt que de diriger la conversation, j'ai tendance à céder la direction de la conversation. Parce que vous êtes imaginatif, vous pouvez librement utiliser des analogies et des métaphores ! J'apprécie le temps passé seul et aime réfléchir à des sujets abstraits.  ",
       phrase: [
-        "너무 심각하게 생각하지마 라이너스",
+        "Ne le prends pas trop au sérieux Linus",
         <br />,
-        "나도 수많은 멍청한 짓을 하면서 살고 있어.",
+        "Je fais aussi beaucoup de bêtises.",
       ],
     },
     INFP: {
-      text: "Rerun Van Pelt(리런 반 펠트)",
+      text: "Rerun Van Pelt",
       description:
-        "당신은 이상적인 세계를 만들어나가는 몽상가 리런입니다. 이해심이 깊으면서도 추구하는 이상에 대해서는 깊은 신념을 가지고 있어요. 주변 사람들에게 관대하지만, 마음 한구석에는 작은 벽이 있어요. 타인의 무관심에 대해 상처를 쉽게 받고, 감수성이 풍부한 스타일이에요.. 혼자 있는 것을 좋아하지만 혼자가 되는 건 싫어요! ",
+        "Vous êtes un rêveur, Lee Ren, qui crée un monde idéal. Il a une compréhension profonde et des convictions profondes sur les idéaux qu'il poursuit. Il est généreux avec ceux qui l'entourent, mais il y a un petit mur dans le coin de son cœur. Il est facilement offensé par l'indifférence des autres, et il a beaucoup de sensibilité. J'aime être seul, mais je déteste être seul ! ",
       phrase: [
-        "나에겐 철학이 있어.",
+        "J'ai une philosophie.",
         <br />,
-        "어려운 일이 있다면,",
+        "si vous rencontrez des difficultés,",
         <br />,
-        "언젠가는 좋은 일도 있다는 거야.",
+        "un jour, de bonnes choses arriveront.",
       ],
     },
     ENFJ: {
-      text: "Frieda(프리다)",
+      text: "Frieda",
       description:
-        "타인과 협동하는 것을 좋아하는 당신은 프리다입니다. 유머러스하고, 너그러우면서 인류애까지 넘치는 박애주의자! 타인에 대한 공감 능력이 뛰어나기 때문에 주변 사람들을 편하게 만드는 데 능숙합니다. 하지만 사람을 좋아하기 때문에 타인의 감정에 민감해요.. 모든 사람에게 사랑을 받고 싶어요. ",
-      phrase: "난 네 옆에만 있으면 돼.",
+        "Vous êtes Frida qui aime collaborer avec les autres. Un philanthrope plein d'humour, généreux et plein d'humanité ! En raison de sa grande empathie pour les autres, il est doué pour mettre ceux qui l'entourent à l'aise. Mais parce que j'aime les gens, je suis sensible aux sentiments des autres, je veux être aimé de tous. ",
+      phrase: "J'ai juste besoin d'être à tes côtés",
     },
     ENFP: {
-      text: "Franklin(프랭클린)",
+      text: "Franklin",
       description:
-        "당신은 긍정적인 인싸 프랭클린입니다. 새로운 사람들을 사귀는 데 두려움을 느끼지 않고, 다른 사람들과 함께 있는 것을 좋아해요. 분위기를 잘 읽어 사람 사이의 묘한 기류를 눈치채지만 모른 척하는 스타일이에요.. 또한 남들은 모르는 나만의 목표와 비전이 있어요. 관종끼가 다분하지만 의외로 감수성이 짙으며 섬세하고 민감해요!",
-      phrase: ["행복은 누구에게나", <br />, "모두에게 온다네"],
+        "Vous êtes un Franklin impertinent et positif. Je n'ai pas peur de rencontrer de nouvelles personnes, j'aime être avec d'autres personnes. Il lit bien l'atmosphère et remarque les courants étranges entre les gens, mais il fait semblant de ne pas savoir. De plus, j'ai mes propres objectifs et vision que les autres ne connaissent pas. Bien qu'il existe de nombreux types de personnes, elles sont étonnamment sensibles, délicates et sensibles !",
+      phrase: "Le bonheur vient à tous et à tous",
     },
     ISTJ: {
-      text: "Sheremy(쉐르미)",
+      text: "Sheremy",
       description:
-        "한번 시작하면 끝까지 해내는 당신은 쉐르미입니다. 조용하며 진지한 편이고, 맡은 일은 다 해내는 성실한 스타일이에요. 익숙한 것을 좋아하며 낯선 환경, 변화와 방해를 싫어해요. 허세나 과장이 없고, 거짓말은 잘 안 하는 솔직한 사람이에요! 창의성이 다소 부족하지만, 일관성과 안정성을 가지고 있어 편안해요. ",
-      phrase: "뭐든 생각하기 나름이야.",
+        "Une fois que vous commencez, vous êtes Sheremy, qui va jusqu'à la fin. Il est calme et sérieux, et c'est un style sincère qui fait tout ce qui lui est assigné. J'aime les choses familières et je déteste les environnements inconnus, les changements et les interruptions. C'est une personne honnête qui n'a ni bluff ni exagération, et qui ne ment pas très souvent ! Il manque un peu de créativité, mais il a de la consistance et de la stabilité, ce qui le rend confortable. ",
+      phrase: "",
     },
     ISFJ: {
-      text: "Charile Brown(찰리 브라운)",
+      text: "Charile Brown",
       description:
-        "온화하여 협조를 잘하는 당신은 찰리 브라운입니다. 상황에 따라 내향적으로 변할 수도 있고, 외향적으로 변할 수도 있기 때문에 나 자신을 잘 몰라요. 착하고 배려가 넘치지만 때로는 우유부단하기도 해요. 부탁을 받으면 거의 다 들어주지만, 남에게 부탁하는 것은 어려워하는 소심쟁이.. 나서는 것은 싫어하지만 관심받는 것을 좋아해요! ",
+        "Vous êtes Charlie Brown, une personne douce et coopérative. Je ne me connais pas bien car je peux devenir introverti ou extraverti selon la situation. Il est gentil et attentionné, mais parfois indécis. C'est une personne timide qui accepte presque tout ce qu'il demande, mais a du mal à demander quoi que ce soit aux autres. Il déteste sortir, mais il aime attirer l'attention !",
       phrase: [
-        "넌 아주 사랑스러운 사람이며,",
+        "tu es une personne très adorable,",
         <br />,
-        "네 인생은 사랑으로 가득 차리라.",
+        "votre vie sera pleine d'amour.",
       ],
     },
     ESTJ: {
-      text: "Voilet Gray(바이올렛 그레이)",
+      text: "Voilet Gray",
       description:
-        "현실적이며 화끈한 당신은 바이올렛입니다. 자신의 감정을 표현하는데 거리낌이 없으며 호불호가 확실해요. 주변 사람에게 팩폭을 날리며 뼈를 때리지만, 자신 또한 트집 잡힐 일을 만들려고 하지 않아요! 계획적이고 일을 굉장히 잘 처리하는 스타일이에요. 자신감이 넘치며 의무와 책임감이 강한 든든함을 가지고 있어요.",
-      phrase: "이를 악물면 뭐든 할 수 있어.",
+        "Réaliste, vous êtes Violet. Il n'hésite pas à exprimer ses sentiments et a clairement ce qu'il aime et n'aime pas. Il jette des paquets sur les gens autour de lui et frappe des os, mais il n'essaie même pas d'inventer des choses pour lui ! C'est un planificateur et il fait très bien les choses. Il est confiant et a un sens aigu du devoir et des responsabilités.",
+      phrase: "Vous pouvez tout faire en serrant les dents.",
     },
     ESFJ: {
-      text: "Patty(패티)",
+      text: "Patty",
       description:
-        "사교적이고 배려심 넘치는 당신은 패티입니다. 타인과의 관계를 통해 에너지를 충전할 만큼 인간관계를 중요시해요! 하지만 그만큼 외로움을 많이 타는 편이기도 해요.. 어색함을 버티지 못하고 다정하게 말을 건네는 당신은 분위기메이커! 리액션도 풍부하기 때문에 고민 상담을 요청하는 사람들도 많아요.",
-      phrase: [
-        "추억을 생각해",
-        <br />,
-        "추억은 그대로 있는거야",
-        <br />,
-        "행복한 기억이야.",
-      ],
+        "Sociable et attentionnée, vous êtes Patty. Nous valorisons tellement les relations humaines que nous pouvons recharger notre énergie à travers les relations avec les autres ! Mais je suis aussi une personne qui souffre beaucoup de solitude.. Vous êtes un créateur d'humeur qui ne supporte pas la maladresse et qui parle gentiment ! Il y a aussi beaucoup de gens qui demandent conseil sur leurs préoccupations car ils ont beaucoup de réactions.",
+      phrase: "Pense aux souvenirs, ce sont des souvenirs heureux",
     },
     ISTP: {
-      text: "Pig-Pen(픽펜)",
+      text: "Pig-Pen",
       description:
-        "만능 재주꾼인 당신은 픽펜입니다. 손재주가 좋으며 도구나 기계에 대한 관심이 많습니다. 호기심이 많아 지루한 일을 싫어하고, 스릴을 즐기는 편이에요! 고집이 있으며 직접 탐험해야 직성이 풀려요. 엄격하게 짜인 규칙에 스트레스를 받고, 즉흥적인 것을 더욱 더 선호해요!",
+        "Le polyvalent, vous êtes un Pig-Pen. Il a une bonne dextérité et s'intéresse beaucoup aux outils et aux machines. J'ai beaucoup de curiosité, donc je déteste les choses ennuyeuses, et j'aime les sensations fortes ! Il est têtu et a besoin d'explorer par lui-même pour libérer son intuition. Stressé par des règles strictes, je préfère l'improvisation !",
       phrase: [
-        "신나는 걸 찾아 떠났을거야",
+        "j'irais chercher quelque chose d'amusant",
         <br />,
-        "신나는 걸 쫓아가는데",
+        "Je cours après quelque chose d'excitant",
         <br />,
-        "그걸 막을 수 없어, 찰리 브라운",
+        "Je ne peux pas l'arrêter, Charlie Brown",
       ],
     },
     ISFP: {
-      text: "Woodstock(우드스톡)",
+      text: "Woodstock",
       description:
-        "당신은 독특한 예술성을 가진 우드스톡입니다. 까다롭고 섬세한 마음을 가져 상처를 쉽게 받아요.. 그래도 항상 따뜻함과 겸손함을 잃지 않는 스타일이에요. 삶의 현재를 즐기는 사람으로 충동적인 면을 가지고 있어요. 경쟁하는 분위기보다는 편안한 분위기에서 능력을 더 잘 발휘할 수 있어요!",
-      phrase: "이기는게 꼭 중요한 건 아니야.",
+        "Vous êtes Woodstock avec un talent artistique unique. Il a un esprit pointilleux et délicat, et se blesse facilement. Cependant, il a toujours un style qui ne perd pas sa chaleur et son humilité. Une personne qui aime le présent de la vie et a un côté impulsif. Vous pouvez mieux performer dans une atmosphère détendue que dans une atmosphère de compétition !",
+      phrase: "Gagner n'est pas forcément important.",
     },
     ESTP: {
-      text: "Peppermint Patty(페퍼민트 패티)",
+      text: "Peppermint Patty",
       description:
-        "활동적이며 다양한 것을 선호하는 당신은 페퍼민트 패티입니다. 항상 에너지가 넘치고 쾌활한 성격을 가지고 있어요. 선입견이 없으며 개방적인 시선으로 세상을 바라보고, 뒤끝 없는 쿨함까지 지니고 있어요! 스트레스를 많이 받지 않으며 복세편살 마인드가 강해요.",
-      phrase: "이 정도 비는 우릴 막을 수 없어.",
+        "Si vous aimez quelque chose d'actif et varié, alors vous avez une galette de menthe poivrée. Il est toujours plein d'énergie et a une personnalité joyeuse. Il n'a pas d'idées préconçues, il voit le monde avec un œil ouvert, et il a un sang-froid sans fin ! Je ne reçois pas beaucoup de stress, et j'ai un fort esprit d'être une diseuse de bonne aventure.",
+      phrase: "Une pluie comme celle-ci ne peut pas nous arrêter",
     },
     ESFP: {
-      text: "Sally Brown(샐리 브라운)",
+      text: "Sally Brown",
       description:
-        "당신은 타고난 엔터테이너 샐리입니다. 집단생활을 즐기고, 신나는 파티 같은 분위기를 좋아하는 인싸! 걱정되는 일도 시간이 지나면 잠잠해져요. 하기 싫고 귀찮은 일은 미루다가 늦게 시작하지만 내가 하고 싶은 일은 빨리빨리 하는 편이에요. 자존감이 굉장히 높아 인생을 나름 즐겁게 살아가요.",
-      phrase: ["내가 당신을 얼마나 사랑하는지", <br />, "헤아려 봅니다."],
+        "Vous êtes une artiste naturelle, qui aime la vie de groupe et aime les ambiances festives ! Les choses inquiétantes s'atténueront avec le temps. Je procrastine et commence tard sur des choses que je ne veux pas faire, mais j'ai tendance à faire des choses que je veux faire tôt. J'ai une très haute estime de moi et j'aime la vie.",
+      phrase: ["combien je t'aime", <br />, "essaie de compter"],
     },
   };
   const photo = require(`./img/${id}.png`).default;
   return (
     <div className="home__container">
-      <h3 className="home__title">스누피 MBTI 테스트</h3>
-      <div>당신은...</div>
+      <h3 className="home__title">Test MBTI Snoopy</h3>
+      <div>Toi...</div>
 
       <div className="result__container">
         <h4 className="result__title">{MBTI[id].text}</h4>
@@ -139,7 +133,7 @@ const Result = ({ id }) => {
         <p className="result__description">{MBTI[id].description}</p>
         <div className="result__phrase">
           <div>{MBTI[id].phrase}</div>
-          <div>- 애니메이션 peanuts -</div>
+          <div>- animation peanuts -</div>
         </div>
         <AddThis />
         <button
@@ -147,13 +141,13 @@ const Result = ({ id }) => {
             window.location.replace("/");
           }}
         >
-          테스트 다시하기
+          refaire le test
         </button>
         <footer>Created by gotaek</footer>
       </div>
       <div className="splash-screen">
         <Spinner animation="border" className="mr-3" />
-        결과 분석중...
+        Analyse des résultats...
       </div>
     </div>
   );
